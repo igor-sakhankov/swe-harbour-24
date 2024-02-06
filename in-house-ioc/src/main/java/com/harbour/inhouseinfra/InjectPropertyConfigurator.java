@@ -8,6 +8,7 @@ import java.io.FileReader;
 import java.lang.reflect.Field;
 import java.net.URL;
 import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toMap;
@@ -34,7 +35,7 @@ public class InjectPropertyConfigurator implements ObjectConfigurator {
         Stream<String> lines = new BufferedReader(new FileReader(resource.getPath())).lines();
         return lines
                 .map(line -> line.split("="))
-                .collect(toMap(line -> line[0], line -> line[1]));
+                .collect(Collectors.toMap(line -> line[0], line -> line[1]));
     }
 
 }
