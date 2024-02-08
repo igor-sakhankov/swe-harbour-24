@@ -19,12 +19,4 @@ openApiGenerate {
     generateApiTests.set(false)
     generateModelTests.set(false)
     generateApiDocumentation.set(false)
-    configOptions.set(
-        mapOf(
-            "gradleBuildFile" to "true",
-            "dateLibrary" to "java8",
-            "interfaceOnly" to "true",
-            "useTags" to "true"
-        )
-    )
 }
