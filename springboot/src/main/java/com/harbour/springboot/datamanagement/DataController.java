@@ -31,8 +31,8 @@ public class DataController {
     }
 
     @GetMapping("/dataJpa")
-    public List<Author> getDataJpa() {
-        return jpaWay.fetchFromDatabase();
+    public List<Map<String, String>> getDataJpa() {
+        return jpaWay.fetchFromDatabase().stream().map(a -> Map.of("id", String.valueOf(a.getId()), "firstName", a.getFirstName())).toList();
     }
 
     @PostMapping("/dataJpa")

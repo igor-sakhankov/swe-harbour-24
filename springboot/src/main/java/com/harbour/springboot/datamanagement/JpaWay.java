@@ -22,11 +22,11 @@ public class JpaWay {
     public void create() {
         var entityManager = entityManagerFactory.createEntityManager();
         entityManager.getTransaction().begin();
-        Author todo = new Author();
-        todo.setId(123);
-        todo.setFirstName("This is a test");
+        Author author = new Author();
+        author.setFirstName("This is a test");
+        author.setBooks(List.of());
 
-        entityManager.persist(todo);
+        entityManager.persist(author);
         entityManager.getTransaction().commit();
     }
 
