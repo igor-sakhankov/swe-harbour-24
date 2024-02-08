@@ -17,10 +17,17 @@ public class DataController {
     private JpaWay jpaWay;
     @Autowired
     private MyAuthorMongoRepository mongoRepository;
+    @Autowired
+    private AuthorRepository authorRepository;
 
     @GetMapping("/dataJdbc")
     public List<Map<String, String>> getDatajdbc() {
         return jdbcWay.fetchFromDatabase();
+    }
+
+    @PostMapping("/dataJdbc")
+    public List<Map<String, String>> createDatajdbc() {
+        return jdbcWay.create();
     }
 
     @GetMapping("/dataJpa")
@@ -33,6 +40,11 @@ public class DataController {
         jpaWay.create();
     }
 
+    @GetMapping("/dataSpring")
+    public List<Author> dataSpring() {
+        return authorRepository.findAll();
+    }
+
     @GetMapping("/dataMongo")
     public List<AuthorMongo> getDataMongo() {
         return mongoRepository.findAll();
@@ -41,6 +53,7 @@ public class DataController {
     @PostMapping("/dataMongo")
     public void createMongo() {
         AuthorMongo todo = new AuthorMongo();
+        todo.setId(123L);
         todo.setName("This is a test");
         todo.setCountry("This is a test");
         mongoRepository.save(todo);

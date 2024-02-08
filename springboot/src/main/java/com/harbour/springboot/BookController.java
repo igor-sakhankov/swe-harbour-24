@@ -5,7 +5,6 @@ import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.graphql.data.method.annotation.SchemaMapping;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
@@ -13,10 +12,10 @@ import static com.harbour.springboot.BookMapper.toVm;
 
 @Controller
 public class BookController {
-    private final AuthorRepository authorRepository;
+    private final AuthorRepository2 authorRepository;
     private final BookRepository bookRepository;
 
-    public BookController(AuthorRepository authorRepository, BookRepository bookRepository) {
+    public BookController(AuthorRepository2 authorRepository, BookRepository bookRepository) {
         this.bookRepository = bookRepository;
         this.authorRepository = authorRepository;
     }

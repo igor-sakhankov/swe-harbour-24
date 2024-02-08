@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Component
-public class AuthorRepository {
+public class AuthorRepository2 {
     private static List<Author> authors = Arrays.asList(
             new Author("author-1", "Joshua", "Bloch"),
             new Author("author-2", "Douglas", "Adams"),

@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9cfad224-1a42-400d-b72c-7f516684f09d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docker/docker-compose-mongodb.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/datamanagement/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/datamanagement/AuthorMongo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/datamanagement/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/datamanagement/DataController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/datamanagement/JdbcWay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/datamanagement/JpaWay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/datamanagement/MyAuthorMongoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/datamanagement/AuthorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/datamanagement/BooksRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/SpringbootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/SpringbootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/AuthorRepository2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/RestBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/RestBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/datamanagement/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/datamanagement/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/datamanagement/DataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/datamanagement/DataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/datamanagement/JdbcWay.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/datamanagement/JdbcWay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/datamanagement/JpaWay.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/harbour/springboot/datamanagement/JpaWay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,8 +48,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -86,6 +83,11 @@
     "project.structure.side.proportion": "0.0",
     "spring.configuration.checksum": "527fa35031575e1fc0d9f90205c3a85a",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">

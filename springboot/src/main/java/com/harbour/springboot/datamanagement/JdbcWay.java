@@ -22,15 +22,9 @@ public class JdbcWay {
     private String password;
 
     public List<Map<String, String>> fetchFromDatabase() {
-        try {
-            // Open a connection
-            System.out.println("Connecting to a selected database...");
-            Connection conn = DriverManager.getConnection(url, username, password);
-            System.out.println("Connected database successfully...");
-
-            // Execute a query
-            System.out.println("Creating statement...");
-            Statement stmt = conn.createStatement();
+        try (Connection conn = DriverManager.getConnection(url, username, password);
+             Statement stmt = conn.createStatement()
+        ) {
             String sql = "SELECT id, name, country FROM authors"; // Assuming your table has id, name, and country columns
             ResultSet rs = stmt.executeQuery(sql);
 
@@ -45,9 +39,6 @@ public class JdbcWay {
                 result.add(Map.of("id", String.valueOf(id), "name", name, "country", country));
 
             }
-            rs.close();
-            stmt.close();
-            conn.close();
             return result;
         } catch (SQLException se) {
             // Handle errors for JDBC
@@ -56,4 +47,7 @@ public class JdbcWay {
         return List.of();
     }
 
+    public List<Map<String, String>> create() {
+        return null;
+    }
 }

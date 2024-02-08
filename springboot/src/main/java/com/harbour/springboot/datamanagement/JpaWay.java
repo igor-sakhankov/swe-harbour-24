@@ -1,6 +1,5 @@
 package com.harbour.springboot.datamanagement;
 
-import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Query;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,8 +23,8 @@ public class JpaWay {
         var entityManager = entityManagerFactory.createEntityManager();
         entityManager.getTransaction().begin();
         Author todo = new Author();
-        todo.setName("This is a test");
-        todo.setCountry("This is a test");
+        todo.setId(123);
+        todo.setFirstName("This is a test");
 
         entityManager.persist(todo);
         entityManager.getTransaction().commit();

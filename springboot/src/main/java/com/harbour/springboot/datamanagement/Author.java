@@ -19,8 +19,9 @@ public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private String name;
-    private String country;
-    @OneToMany(mappedBy = "author", fetch = FetchType.LAZY)
+    private String firstName;
+    private String secondName;
+    private int goodReadsRank;
+    @OneToMany(mappedBy = "author", fetch = FetchType.EAGER)
     private List<Book> books;
 }
