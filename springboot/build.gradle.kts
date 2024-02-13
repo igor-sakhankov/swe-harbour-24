@@ -11,6 +11,7 @@ repositories {
 }
 
 dependencies {
+    implementation(project(":generated"))
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-data-rest")
     implementation("org.springframework.boot:spring-boot-starter-graphql")
