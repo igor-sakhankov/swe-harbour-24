@@ -4,6 +4,8 @@ plugins {
     id("io.spring.dependency-management") version "1.1.4"
     id("com.netflix.dgs.codegen") version "6.0.3"
     id("io.github.lognet.grpc-spring-boot") version "5.1.5"
+    id("io.freefair.lombok") version "8.4"
+    jacoco
 }
 
 repositories {
@@ -29,4 +31,13 @@ tasks.generateJava {
     packageName = "com.harbour.springboot.codegen"
     generateClient = true
 }
+
+tasks.test {
+    useJUnitPlatform()
+    finalizedBy(tasks.jacocoTestReport) // report is always generated after tests run
+}
+tasks.jacocoTestReport {
+    dependsOn(tasks.test) // tests are required to run before generating the report
+}
+
 
