@@ -1,9 +1,9 @@
 package com.harbour.springboot.refactoring;
 
-import com.harbour.springboot.refactoring.dtos.ExternalApi;
-import com.harbour.springboot.refactoring.dtos.ExternalRequestDTO;
-import com.harbour.springboot.refactoring.dtos.ExternalRequestVM;
-import com.harbour.springboot.refactoring.dtos.ExternalResponseDTO;
+import com.harbour.springboot.refactoring.notimportant.ExternalApi;
+import com.harbour.springboot.refactoring.notimportant.ExternalRequestDTO;
+import com.harbour.springboot.refactoring.notimportant.ExternalRequestVM;
+import com.harbour.springboot.refactoring.notimportant.ExternalResponseDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Lazy;

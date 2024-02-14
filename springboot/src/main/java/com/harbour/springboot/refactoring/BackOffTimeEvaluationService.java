@@ -2,7 +2,7 @@ package com.harbour.springboot.refactoring;
 
 import com.amazonaws.services.sqs.AmazonSQS;
 import com.amazonaws.services.sqs.model.Message;
-import com.harbour.springboot.refactoring.dtos.ExternalResponseDTO;
+import com.harbour.springboot.refactoring.notimportant.ExternalResponseDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

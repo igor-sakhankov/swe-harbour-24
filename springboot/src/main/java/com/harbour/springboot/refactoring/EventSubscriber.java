@@ -4,7 +4,7 @@ import com.amazonaws.services.sqs.AmazonSQS;
 import com.amazonaws.services.sqs.model.DeleteMessageBatchRequestEntry;
 import com.amazonaws.services.sqs.model.ReceiveMessageRequest;
 import com.google.gson.Gson;
-import com.harbour.springboot.refactoring.dtos.ExternalRequestDTO;
+import com.harbour.springboot.refactoring.notimportant.ExternalRequestDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

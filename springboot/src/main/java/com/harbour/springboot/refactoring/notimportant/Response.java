@@ -1,4 +1,4 @@
-package com.harbour.springboot.refactoring.dtos;
+package com.harbour.springboot.refactoring.notimportant;
 
 import org.springframework.http.StreamingHttpOutputMessage;
 
